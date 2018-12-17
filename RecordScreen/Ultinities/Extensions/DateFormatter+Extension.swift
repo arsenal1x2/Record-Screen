@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+extension DateFormatter {
+    convenience init(dateFormat: String) {
+        self.init()
+        self.calendar = Calendar(identifier: .gregorian)
+        self.dateFormat = dateFormat
+    }
+}

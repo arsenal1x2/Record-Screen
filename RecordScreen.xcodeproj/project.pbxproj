@@ -12,6 +12,24 @@
 		253D1D6221C73BFC00C754D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D6021C73BFC00C754D5 /* Main.storyboard */; };
 		253D1D6421C73BFD00C754D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D6321C73BFD00C754D5 /* Assets.xcassets */; };
 		253D1D6721C73BFD00C754D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D6521C73BFD00C754D5 /* LaunchScreen.storyboard */; };
+		253D1D7021C73C1F00C754D5 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D6F21C73C1F00C754D5 /* HomeViewController.storyboard */; };
+		253D1D7221C73C3100C754D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D7121C73C3100C754D5 /* HomeViewController.swift */; };
+		253D1D7521C73E9E00C754D5 /* RecorderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D7421C73E9E00C754D5 /* RecorderView.xib */; };
+		253D1D7721C73EB500C754D5 /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D7621C73EB500C754D5 /* RecorderView.swift */; };
+		253D1D7C21C7458400C754D5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D7B21C7458400C754D5 /* UIViewController+Extension.swift */; };
+		253D1D7E21C745C500C754D5 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D7D21C745C500C754D5 /* NSObject+Extension.swift */; };
+		253D1D8021C7460900C754D5 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D7F21C7460900C754D5 /* UIView+Extension.swift */; };
+		253D1D8221C7463200C754D5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D8121C7463200C754D5 /* UIColor+Extension.swift */; };
+		253D1D8421C7468700C754D5 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D8321C7468700C754D5 /* Date+Extension.swift */; };
+		253D1D8621C746A700C754D5 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D8521C746A700C754D5 /* DateFormatter+Extension.swift */; };
+		253D1D8821C74A7300C754D5 /* WebNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D8721C74A7300C754D5 /* WebNavigationView.xib */; };
+		253D1D8A21C74A8B00C754D5 /* WebNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D8921C74A8B00C754D5 /* WebNavigationView.swift */; };
+		253D1D8C21C74ADF00C754D5 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D8B21C74ADF00C754D5 /* SettingViewController.storyboard */; };
+		253D1D8E21C74AF600C754D5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D8D21C74AF600C754D5 /* SettingViewController.swift */; };
+		253D1D9021C751A100C754D5 /* BrowserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253D1D8F21C751A100C754D5 /* BrowserViewController.storyboard */; };
+		253D1D9221C751B400C754D5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D9121C751B400C754D5 /* BrowserViewController.swift */; };
+		253D1D9421C75B8B00C754D5 /* Gradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D9321C75B8B00C754D5 /* Gradient+Extension.swift */; };
+		253D1D9921C7890800C754D5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D9821C7890800C754D5 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +40,24 @@
 		253D1D6321C73BFD00C754D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253D1D6621C73BFD00C754D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		253D1D6821C73BFD00C754D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253D1D6F21C73C1F00C754D5 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		253D1D7121C73C3100C754D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		253D1D7421C73E9E00C754D5 /* RecorderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecorderView.xib; sourceTree = "<group>"; };
+		253D1D7621C73EB500C754D5 /* RecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		253D1D7B21C7458400C754D5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		253D1D7D21C745C500C754D5 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		253D1D7F21C7460900C754D5 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		253D1D8121C7463200C754D5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		253D1D8321C7468700C754D5 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		253D1D8521C746A700C754D5 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		253D1D8721C74A7300C754D5 /* WebNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebNavigationView.xib; sourceTree = "<group>"; };
+		253D1D8921C74A8B00C754D5 /* WebNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebNavigationView.swift; sourceTree = "<group>"; };
+		253D1D8B21C74ADF00C754D5 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
+		253D1D8D21C74AF600C754D5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		253D1D8F21C751A100C754D5 /* BrowserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserViewController.storyboard; sourceTree = "<group>"; };
+		253D1D9121C751B400C754D5 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		253D1D9321C75B8B00C754D5 /* Gradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Extension.swift"; sourceTree = "<group>"; };
+		253D1D9821C7890800C754D5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,9 @@
 		253D1D5B21C73BFC00C754D5 /* RecordScreen */ = {
 			isa = PBXGroup;
 			children = (
+				253D1D7821C7444D00C754D5 /* Ultinities */,
+				253D1D7321C73E6A00C754D5 /* View */,
+				253D1D6E21C73C0200C754D5 /* ViewController */,
 				253D1D5C21C73BFC00C754D5 /* AppDelegate.swift */,
 				253D1D5E21C73BFC00C754D5 /* ViewController.swift */,
 				253D1D6021C73BFC00C754D5 /* Main.storyboard */,
@@ -62,6 +101,77 @@
 				253D1D6821C73BFD00C754D5 /* Info.plist */,
 			);
 			path = RecordScreen;
+			sourceTree = "<group>";
+		};
+		253D1D6E21C73C0200C754D5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D9721C77EE000C754D5 /* Browser */,
+				253D1D9621C77ED100C754D5 /* Setting */,
+				253D1D9521C77EC100C754D5 /* Home */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		253D1D7321C73E6A00C754D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D7421C73E9E00C754D5 /* RecorderView.xib */,
+				253D1D7621C73EB500C754D5 /* RecorderView.swift */,
+				253D1D8721C74A7300C754D5 /* WebNavigationView.xib */,
+				253D1D8921C74A8B00C754D5 /* WebNavigationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		253D1D7821C7444D00C754D5 /* Ultinities */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D7A21C7456800C754D5 /* Extensions */,
+			);
+			path = Ultinities;
+			sourceTree = "<group>";
+		};
+		253D1D7A21C7456800C754D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D7B21C7458400C754D5 /* UIViewController+Extension.swift */,
+				253D1D7D21C745C500C754D5 /* NSObject+Extension.swift */,
+				253D1D7F21C7460900C754D5 /* UIView+Extension.swift */,
+				253D1D8121C7463200C754D5 /* UIColor+Extension.swift */,
+				253D1D8321C7468700C754D5 /* Date+Extension.swift */,
+				253D1D8521C746A700C754D5 /* DateFormatter+Extension.swift */,
+				253D1D9321C75B8B00C754D5 /* Gradient+Extension.swift */,
+				253D1D9821C7890800C754D5 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		253D1D9521C77EC100C754D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D6F21C73C1F00C754D5 /* HomeViewController.storyboard */,
+				253D1D7121C73C3100C754D5 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		253D1D9621C77ED100C754D5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D8B21C74ADF00C754D5 /* SettingViewController.storyboard */,
+				253D1D8D21C74AF600C754D5 /* SettingViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		253D1D9721C77EE000C754D5 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				253D1D8F21C751A100C754D5 /* BrowserViewController.storyboard */,
+				253D1D9121C751B400C754D5 /* BrowserViewController.swift */,
+			);
+			path = Browser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +232,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253D1D7021C73C1F00C754D5 /* HomeViewController.storyboard in Resources */,
 				253D1D6721C73BFD00C754D5 /* LaunchScreen.storyboard in Resources */,
 				253D1D6421C73BFD00C754D5 /* Assets.xcassets in Resources */,
+				253D1D8C21C74ADF00C754D5 /* SettingViewController.storyboard in Resources */,
+				253D1D9021C751A100C754D5 /* BrowserViewController.storyboard in Resources */,
+				253D1D8821C74A7300C754D5 /* WebNavigationView.xib in Resources */,
 				253D1D6221C73BFC00C754D5 /* Main.storyboard in Resources */,
+				253D1D7521C73E9E00C754D5 /* RecorderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +251,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				253D1D5F21C73BFC00C754D5 /* ViewController.swift in Sources */,
+				253D1D9421C75B8B00C754D5 /* Gradient+Extension.swift in Sources */,
+				253D1D8021C7460900C754D5 /* UIView+Extension.swift in Sources */,
+				253D1D8A21C74A8B00C754D5 /* WebNavigationView.swift in Sources */,
 				253D1D5D21C73BFC00C754D5 /* AppDelegate.swift in Sources */,
+				253D1D7721C73EB500C754D5 /* RecorderView.swift in Sources */,
+				253D1D7C21C7458400C754D5 /* UIViewController+Extension.swift in Sources */,
+				253D1D7221C73C3100C754D5 /* HomeViewController.swift in Sources */,
+				253D1D7E21C745C500C754D5 /* NSObject+Extension.swift in Sources */,
+				253D1D9221C751B400C754D5 /* BrowserViewController.swift in Sources */,
+				253D1D8221C7463200C754D5 /* UIColor+Extension.swift in Sources */,
+				253D1D8621C746A700C754D5 /* DateFormatter+Extension.swift in Sources */,
+				253D1D8421C7468700C754D5 /* Date+Extension.swift in Sources */,
+				253D1D9921C7890800C754D5 /* String+Extension.swift in Sources */,
+				253D1D8E21C74AF600C754D5 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
