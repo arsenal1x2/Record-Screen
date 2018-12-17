@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="oas-UY-F1A">
+            <objects>
+                <viewController id="QvU-Ks-mcE" customClass="HomeViewController" customModule="RecordScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WcK-iq-vWL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdH-YX-XUm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swS-eW-Ho6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="phn-AL-AaS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glQ-Da-96g">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="gna-MJ-D3j"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="swS-eW-Ho6" firstAttribute="leading" secondItem="fdH-YX-XUm" secondAttribute="leading" id="8GI-f6-F8U"/>
+                                    <constraint firstAttribute="trailing" secondItem="glQ-Da-96g" secondAttribute="trailing" id="9iQ-ZG-xvm"/>
+                                    <constraint firstAttribute="trailing" secondItem="swS-eW-Ho6" secondAttribute="trailing" id="CMM-eK-FbO"/>
+                                    <constraint firstItem="swS-eW-Ho6" firstAttribute="top" secondItem="fdH-YX-XUm" secondAttribute="top" id="IPS-t0-IvH"/>
+                                    <constraint firstItem="glQ-Da-96g" firstAttribute="top" secondItem="swS-eW-Ho6" secondAttribute="bottom" id="IVh-NM-15N"/>
+                                    <constraint firstItem="glQ-Da-96g" firstAttribute="leading" secondItem="fdH-YX-XUm" secondAttribute="leading" id="wOh-1x-COX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fdH-YX-XUm" firstAttribute="top" secondItem="WcK-iq-vWL" secondAttribute="top" id="4ld-HX-kIm"/>
+                            <constraint firstItem="fdH-YX-XUm" firstAttribute="trailing" secondItem="J3Q-kH-5wt" secondAttribute="trailing" id="C86-Mm-BXh"/>
+                            <constraint firstItem="fdH-YX-XUm" firstAttribute="bottom" secondItem="WcK-iq-vWL" secondAttribute="bottom" id="QQ8-6p-BKH"/>
+                            <constraint firstItem="fdH-YX-XUm" firstAttribute="leading" secondItem="J3Q-kH-5wt" secondAttribute="leading" id="lS0-7d-B5j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J3Q-kH-5wt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Fp-MI-vck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="-180.35982008995504"/>
+        </scene>
+    </scenes>
+</document>
