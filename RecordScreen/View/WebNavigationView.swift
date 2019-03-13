@@ -61,12 +61,12 @@ class WebNavigationView: UIView {
     @IBAction func clickPrevButton(_ sender: Any) {
         delegate?.webNavigationViewDidClickPrevButton()
     }
-
 }
 
 // #MARK: UITextFieldDelegate
 
 extension WebNavigationView: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         guard var webAdress = webAddressTextField.text else {
             return true
@@ -77,8 +77,7 @@ extension WebNavigationView: UITextFieldDelegate {
             webAdress = "http://\(webAdress)"
             loadURL(urlString: webAdress)
         }
-       webAddressTextField.endEditing(true)
-        
+        webAddressTextField.endEditing(true)
         return true
     }
 
@@ -87,7 +86,7 @@ extension WebNavigationView: UITextFieldDelegate {
             delegate?.didFinishWebAdressTextField(url: url)
         } else {
             let url = urlString.getLinkSearchKey()
-           delegate?.didFinishWebAdressTextField(url: url)
+            delegate?.didFinishWebAdressTextField(url: url)
         }
         self.webAddressTextField.text = urlString
     }
@@ -107,7 +106,5 @@ extension WebNavigationView: BrowserViewControllerDelegate {
         } else {
             prevButton.isHidden = true
         }
-
     }
-    
 }

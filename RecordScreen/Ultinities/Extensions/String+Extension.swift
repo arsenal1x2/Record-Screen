@@ -28,6 +28,4 @@ extension String {
         }
         return URL(string: result)!
     }
-
-
 }

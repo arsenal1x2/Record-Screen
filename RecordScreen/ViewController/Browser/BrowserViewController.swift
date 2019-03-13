@@ -28,7 +28,6 @@ class BrowserViewController: UIViewController {
             return
         }
         let urlRequest = URLRequest(url: url)
-
         webview.load(urlRequest)
     }
 

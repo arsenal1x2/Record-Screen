@@ -46,6 +46,9 @@
                                 <constraint firstAttribute="width" constant="22" id="aNM-bF-HQe"/>
                             </constraints>
                             <state key="normal" image="icons8-multiply-filled"/>
+                            <connections>
+                                <action selector="clickClosingButton:" destination="-1" eventType="touchUpInside" id="Pgd-7F-oIK"/>
+                            </connections>
                         </button>
                     </subviews>
                     <constraints>

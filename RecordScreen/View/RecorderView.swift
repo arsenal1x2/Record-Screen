@@ -8,9 +8,14 @@
 
 import UIKit
 
+@objc protocol RecorderViewDelegate {
+    func recorderViewDidClickedClosedButton()
+}
+
 class RecorderView: UIView {
 
     @IBOutlet var contentView: UIView!
+    weak var delegate: RecorderViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,5 +34,8 @@ class RecorderView: UIView {
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
-
+    
+    @IBAction func clickClosingButton(_ sender: Any) {
+        delegate?.recorderViewDidClickedClosedButton()
+    }
 }
