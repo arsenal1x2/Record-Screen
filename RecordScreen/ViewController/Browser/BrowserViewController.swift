@@ -14,6 +14,7 @@ import WebKit
 }
 class BrowserViewController: UIViewController {
 
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var recordView: RecorderView!
@@ -42,6 +43,7 @@ class BrowserViewController: UIViewController {
         delegateWebNavigationView = webNavigationView
         topView.setGradientBackground()
         bottomView.setGradientBackground()
+        mainView.setGradientBackground()
     }
 }
 

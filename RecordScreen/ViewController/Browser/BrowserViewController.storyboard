@@ -40,21 +40,21 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-hb-69K">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="550"/>
+                                        <rect key="frame" x="0.0" y="84" width="375" height="530"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-DL-qpK">
-                                                <rect key="frame" x="10" y="5" width="355" height="540"/>
+                                                <rect key="frame" x="10" y="5" width="355" height="520"/>
                                                 <subviews>
                                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98F-lw-Y5o">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="540"/>
-                                                        <color key="backgroundColor" red="0.98039215690000003" green="0.80000000000000004" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="520"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <wkWebViewConfiguration key="configuration">
                                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                                             <wkPreferences key="preferences"/>
                                                         </wkWebViewConfiguration>
                                                     </wkWebView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.98039215690000003" green="0.80000000000000004" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="98F-lw-Y5o" secondAttribute="trailing" id="5Wn-nE-nCI"/>
                                                     <constraint firstItem="98F-lw-Y5o" firstAttribute="leading" secondItem="JUv-DL-qpK" secondAttribute="leading" id="6Uf-ce-PPP"/>
@@ -68,7 +68,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.98039215686274506" green="0.80000000000000004" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="JUv-DL-qpK" firstAttribute="centerX" secondItem="4Ke-hb-69K" secondAttribute="centerX" id="E8n-j1-1kc"/>
                                             <constraint firstItem="JUv-DL-qpK" firstAttribute="width" secondItem="4Ke-hb-69K" secondAttribute="width" multiplier="355:375" id="G2Q-gI-CKf"/>
@@ -77,42 +77,34 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnC-JZ-7wk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                        <rect key="frame" x="0.0" y="20" width="375" height="64"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zee-Q4-eA0">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="COs-q2-aNJ"/>
-                                                </constraints>
-                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwi-2L-2Rv">
-                                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3R-mf-mh5" customClass="WebNavigationView" customModule="RecordScreen" customModuleProvider="target">
-                                                        <rect key="frame" x="10" y="0.0" width="355" height="44"/>
+                                                        <rect key="frame" x="10" y="21" width="355" height="22"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="22" id="pdU-qD-5DU"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="a3R-mf-mh5" firstAttribute="top" secondItem="Dwi-2L-2Rv" secondAttribute="top" id="Gwl-yi-FZy"/>
-                                                    <constraint firstAttribute="bottom" secondItem="a3R-mf-mh5" secondAttribute="bottom" id="Sxg-Wh-IdZ"/>
-                                                    <constraint firstItem="a3R-mf-mh5" firstAttribute="centerX" secondItem="Dwi-2L-2Rv" secondAttribute="centerX" id="jgw-Be-3jg"/>
-                                                    <constraint firstItem="a3R-mf-mh5" firstAttribute="width" secondItem="Dwi-2L-2Rv" secondAttribute="width" multiplier="355:375" id="nwG-Il-jaS"/>
+                                                    <constraint firstItem="a3R-mf-mh5" firstAttribute="centerY" secondItem="Dwi-2L-2Rv" secondAttribute="centerY" id="2zA-Dj-Rgv"/>
+                                                    <constraint firstItem="a3R-mf-mh5" firstAttribute="centerX" secondItem="Dwi-2L-2Rv" secondAttribute="centerX" id="Hg8-tD-Axt"/>
+                                                    <constraint firstItem="a3R-mf-mh5" firstAttribute="width" secondItem="Dwi-2L-2Rv" secondAttribute="width" multiplier="355:375" id="JaY-WZ-Jry"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="zee-Q4-eA0" secondAttribute="trailing" id="8bH-So-s3i"/>
                                             <constraint firstItem="Dwi-2L-2Rv" firstAttribute="leading" secondItem="rnC-JZ-7wk" secondAttribute="leading" id="9T1-zM-e1C"/>
                                             <constraint firstAttribute="trailing" secondItem="Dwi-2L-2Rv" secondAttribute="trailing" id="FVv-Gn-emO"/>
-                                            <constraint firstItem="Dwi-2L-2Rv" firstAttribute="top" secondItem="zee-Q4-eA0" secondAttribute="bottom" id="b5C-ww-JfR"/>
+                                            <constraint firstItem="Dwi-2L-2Rv" firstAttribute="top" secondItem="rnC-JZ-7wk" secondAttribute="top" id="HXp-C2-b2m"/>
                                             <constraint firstAttribute="height" constant="64" id="cgS-4z-A8Z"/>
                                             <constraint firstAttribute="bottom" secondItem="Dwi-2L-2Rv" secondAttribute="bottom" id="eeR-C2-8Eh"/>
-                                            <constraint firstItem="zee-Q4-eA0" firstAttribute="leading" secondItem="rnC-JZ-7wk" secondAttribute="leading" id="fkA-ne-qAl"/>
-                                            <constraint firstItem="zee-Q4-eA0" firstAttribute="top" secondItem="rnC-JZ-7wk" secondAttribute="top" id="wYW-aR-ju3"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -123,7 +115,7 @@
                                     <constraint firstItem="hoC-A5-r0A" firstAttribute="trailing" secondItem="rnC-JZ-7wk" secondAttribute="trailing" id="U2K-R8-uPF"/>
                                     <constraint firstItem="NKy-ak-Zqz" firstAttribute="leading" secondItem="V0y-7o-MsK" secondAttribute="leading" id="Zf6-lN-ECH"/>
                                     <constraint firstItem="4Ke-hb-69K" firstAttribute="top" secondItem="rnC-JZ-7wk" secondAttribute="bottom" id="hgf-cQ-4Xa"/>
-                                    <constraint firstItem="rnC-JZ-7wk" firstAttribute="top" secondItem="V0y-7o-MsK" secondAttribute="top" id="ivn-Yo-Mhj"/>
+                                    <constraint firstItem="rnC-JZ-7wk" firstAttribute="top" secondItem="hoC-A5-r0A" secondAttribute="top" id="ivn-Yo-Mhj"/>
                                     <constraint firstItem="hoC-A5-r0A" firstAttribute="trailing" secondItem="4Ke-hb-69K" secondAttribute="trailing" id="n9u-cK-fsI"/>
                                     <constraint firstAttribute="trailing" secondItem="NKy-ak-Zqz" secondAttribute="trailing" id="rqa-91-0zo"/>
                                     <constraint firstItem="4Ke-hb-69K" firstAttribute="leading" secondItem="hoC-A5-r0A" secondAttribute="leading" id="zAk-Yv-A6z"/>
@@ -143,6 +135,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomView" destination="NKy-ak-Zqz" id="P9J-C7-7d2"/>
+                        <outlet property="mainView" destination="V0y-7o-MsK" id="hdI-5k-Nus"/>
                         <outlet property="recordView" destination="cpH-R9-UaB" id="jff-Ek-Rn7"/>
                         <outlet property="topView" destination="rnC-JZ-7wk" id="A8e-Kz-eri"/>
                         <outlet property="webNavigationView" destination="a3R-mf-mh5" id="Mwj-Yy-yIM"/>

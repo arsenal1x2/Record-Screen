@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,9 +36,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDS-fr-2Tg">
                             <rect key="frame" x="151" y="0.0" width="53" height="53"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="53" id="AdT-z8-Tif"/>
+                                <constraint firstAttribute="width" secondItem="bDS-fr-2Tg" secondAttribute="height" multiplier="1:1" id="dpr-IX-YQK"/>
                             </constraints>
-                            <state key="normal" image="record"/>
+                            <state key="normal" backgroundImage="icons8-record-filled"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBi-fP-jDM">
                             <rect key="frame" x="333" y="0.0" width="22" height="53"/>
@@ -48,18 +49,17 @@
                         </button>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="bDS-fr-2Tg" firstAttribute="top" secondItem="hdO-ep-RtZ" secondAttribute="top" id="08A-Ui-R9c"/>
                         <constraint firstItem="UBi-fP-jDM" firstAttribute="top" secondItem="hdO-ep-RtZ" secondAttribute="top" id="2cI-Kd-G0t"/>
                         <constraint firstItem="UBi-fP-jDM" firstAttribute="top" secondItem="hdO-ep-RtZ" secondAttribute="top" id="4lI-iv-z5z"/>
                         <constraint firstAttribute="trailing" secondItem="UBi-fP-jDM" secondAttribute="trailing" id="8z1-dK-qma"/>
-                        <constraint firstAttribute="bottom" secondItem="bDS-fr-2Tg" secondAttribute="bottom" id="9H4-ho-fN1"/>
                         <constraint firstAttribute="bottom" secondItem="0aT-Yh-dm5" secondAttribute="bottom" id="FVZ-uH-bVn"/>
                         <constraint firstAttribute="bottom" secondItem="UBi-fP-jDM" secondAttribute="bottom" id="H8M-pb-lll"/>
                         <constraint firstItem="0aT-Yh-dm5" firstAttribute="leading" secondItem="hdO-ep-RtZ" secondAttribute="leading" id="Nnl-e6-7rn"/>
-                        <constraint firstItem="bDS-fr-2Tg" firstAttribute="centerX" secondItem="hdO-ep-RtZ" secondAttribute="centerX" id="ReD-nX-akm"/>
+                        <constraint firstItem="bDS-fr-2Tg" firstAttribute="centerX" secondItem="hdO-ep-RtZ" secondAttribute="centerX" id="Ruk-6z-9M8"/>
                         <constraint firstAttribute="trailing" secondItem="UBi-fP-jDM" secondAttribute="trailing" id="UgQ-QU-r3F"/>
                         <constraint firstAttribute="bottom" secondItem="UBi-fP-jDM" secondAttribute="bottom" id="kwX-OG-Kzz"/>
                         <constraint firstItem="0aT-Yh-dm5" firstAttribute="top" secondItem="hdO-ep-RtZ" secondAttribute="top" id="rK2-kC-lU7"/>
+                        <constraint firstItem="bDS-fr-2Tg" firstAttribute="centerY" secondItem="hdO-ep-RtZ" secondAttribute="centerY" id="tS6-pT-486"/>
                     </constraints>
                 </stackView>
             </subviews>
@@ -77,6 +77,6 @@
     </objects>
     <resources>
         <image name="icons8-multiply-filled" width="25" height="25"/>
-        <image name="record" width="80" height="80"/>
+        <image name="icons8-record-filled" width="33" height="33"/>
     </resources>
 </document>

@@ -42,7 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func initRootViewController() {
-        let viewcontroller = BrowserViewController.instantiateFromStoryboard()
+        let storyboard = UIStoryboard.init(name: "HomeViewController", bundle: nil)
+        let viewcontroller = storyboard.instantiateViewController(withIdentifier: "NavigationViewController")
         window?.rootViewController = viewcontroller
         window?.makeKeyAndVisible()
     }

@@ -184,8 +184,8 @@ extension UIView {
 
     func setGradientBackground() {
         let gradientLayer = CAGradientLayer()
-        let colorTop = UIColor(hexString: "FF7834")
-        let colorButtom = UIColor(hexString: "FF982E")
+        let colorTop = UIColor(hexString: "40910a")
+        let colorButtom = UIColor(hexString: "00ff00")
         gradientLayer.colors = [colorButtom.cgColor, colorTop.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)

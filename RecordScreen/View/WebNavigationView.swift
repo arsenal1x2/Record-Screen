@@ -36,7 +36,7 @@ class WebNavigationView: UIView {
     private func initView() {
         _ = loadViewFromNib()
         self.backgroundColor = UIColor.clear
-        webAddressView.layer.cornerRadius = webAddressView.frame.height / 2.0
+        webAddressView.layer.cornerRadius = webAddressView.frame.height / 4.0
         webAddressView.clipsToBounds = true
         addSubview(contentView)
         webAddressTextField.delegate = self
@@ -109,4 +109,5 @@ extension WebNavigationView: BrowserViewControllerDelegate {
         }
 
     }
+    
 }

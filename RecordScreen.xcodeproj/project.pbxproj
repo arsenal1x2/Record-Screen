@@ -30,6 +30,9 @@
 		253D1D9221C751B400C754D5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D9121C751B400C754D5 /* BrowserViewController.swift */; };
 		253D1D9421C75B8B00C754D5 /* Gradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D9321C75B8B00C754D5 /* Gradient+Extension.swift */; };
 		253D1D9921C7890800C754D5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D1D9821C7890800C754D5 /* String+Extension.swift */; };
+		3650AB70223765F1001FA283 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650AB6F223765F1001FA283 /* UITableView+Extension.swift */; };
+		3650AB73223766E2001FA283 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650AB72223766E2001FA283 /* HomeTableViewCell.swift */; };
+		3650AB752237B2EE001FA283 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650AB742237B2EE001FA283 /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		253D1D9121C751B400C754D5 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		253D1D9321C75B8B00C754D5 /* Gradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient+Extension.swift"; sourceTree = "<group>"; };
 		253D1D9821C7890800C754D5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		3650AB6F223765F1001FA283 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3650AB72223766E2001FA283 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		3650AB742237B2EE001FA283 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 				253D1D8521C746A700C754D5 /* DateFormatter+Extension.swift */,
 				253D1D9321C75B8B00C754D5 /* Gradient+Extension.swift */,
 				253D1D9821C7890800C754D5 /* String+Extension.swift */,
+				3650AB6F223765F1001FA283 /* UITableView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,8 +157,10 @@
 		253D1D9521C77EC100C754D5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3650AB71223766BE001FA283 /* Cell */,
 				253D1D6F21C73C1F00C754D5 /* HomeViewController.storyboard */,
 				253D1D7121C73C3100C754D5 /* HomeViewController.swift */,
+				3650AB742237B2EE001FA283 /* NavigationViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -172,6 +181,14 @@
 				253D1D9121C751B400C754D5 /* BrowserViewController.swift */,
 			);
 			path = Browser;
+			sourceTree = "<group>";
+		};
+		3650AB71223766BE001FA283 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3650AB72223766E2001FA283 /* HomeTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +279,12 @@
 				253D1D9221C751B400C754D5 /* BrowserViewController.swift in Sources */,
 				253D1D8221C7463200C754D5 /* UIColor+Extension.swift in Sources */,
 				253D1D8621C746A700C754D5 /* DateFormatter+Extension.swift in Sources */,
+				3650AB752237B2EE001FA283 /* NavigationViewController.swift in Sources */,
 				253D1D8421C7468700C754D5 /* Date+Extension.swift in Sources */,
 				253D1D9921C7890800C754D5 /* String+Extension.swift in Sources */,
 				253D1D8E21C74AF600C754D5 /* SettingViewController.swift in Sources */,
+				3650AB73223766E2001FA283 /* HomeTableViewCell.swift in Sources */,
+				3650AB70223765F1001FA283 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
