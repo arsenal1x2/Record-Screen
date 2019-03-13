@@ -13,8 +13,9 @@
         <!--Navigation View Controller-->
         <scene sceneID="jdp-3b-Gem">
             <objects>
-                <navigationController storyboardIdentifier="NavigationViewController" navigationBarHidden="YES" id="mCM-gt-HCd" customClass="NavigationViewController" customModule="RecordScreen" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationViewController" id="mCM-gt-HCd" customClass="NavigationViewController" customModule="RecordScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WNd-LN-qxl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

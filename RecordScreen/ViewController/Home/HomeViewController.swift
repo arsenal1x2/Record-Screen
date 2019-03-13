@@ -24,11 +24,12 @@ class HomeViewController: UIViewController {
         menuTableView.dataSource = self
     }
     
-    func pushBrowserViewController() {
+    func pushViewController(viewcontroller: UIViewController) {
         print("aaa")
-        let browserViewController = BrowserViewController.instantiateFromStoryboard()
-        self.navigationController?.pushViewController(browserViewController, animated: true)
+        self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
+    
+    
 }
 
 
@@ -49,7 +50,14 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        pushBrowserViewController()
+        switch indexPath.section {
+        case 1:
+            let vc = BrowserViewController.instantiateFromStoryboard()
+            pushViewController(viewcontroller: vc)
+        default:
+            let vc = SettingTableViewController.instantiateFromStoryboard()
+            pushViewController(viewcontroller: vc)
+        }
     }
 }
 

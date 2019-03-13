@@ -30,19 +30,31 @@ class BrowserViewController: UIViewController {
         let urlRequest = URLRequest(url: url)
         webview.load(urlRequest)
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+       initViews()
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         initViews()
+        navigationController?.navigationBar.isHidden = false
     }
-
+    
+    override func loadView() {
+        super.loadView()
+        initViews()
+    }
+    
     func initViews() {
         webview.navigationDelegate = self
         webNavigationView.delegate = self
+        recordView.delegate = self
         delegateWebNavigationView = webNavigationView
+        navigationController?.navigationBar.isHidden = true
+        mainView.setGradientBackground()
         topView.setGradientBackground()
         bottomView.setGradientBackground()
-        mainView.setGradientBackground()
+        
     }
 }
 
@@ -67,6 +79,12 @@ extension BrowserViewController: WebNavigationViewDelegate {
 extension BrowserViewController: WKUIDelegate, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         delegateWebNavigationView?.webviewDidFinishLoad?(canGoBack: webView.canGoBack, cangoForward: webView.canGoForward)
+    }
+}
+
+extension BrowserViewController: RecorderViewDelegate {
+    func recorderViewDidClickedClosedButton() {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

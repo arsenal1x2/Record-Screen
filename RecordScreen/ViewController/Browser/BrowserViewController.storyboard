@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,14 +16,14 @@
             <objects>
                 <viewController storyboardIdentifier="BrowserViewController" id="Sic-UC-Svv" customClass="BrowserViewController" customModule="RecordScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Izn-cQ-erL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V0y-7o-MsK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKy-ak-Zqz">
-                                        <rect key="frame" x="0.0" y="614" width="375" height="53"/>
+                                        <rect key="frame" x="0.0" y="725" width="375" height="53"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpH-R9-UaB" customClass="RecorderView" customModule="RecordScreen" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="0.0" width="355" height="53"/>
@@ -40,13 +40,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ke-hb-69K">
-                                        <rect key="frame" x="0.0" y="84" width="375" height="530"/>
+                                        <rect key="frame" x="0.0" y="108" width="375" height="617"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUv-DL-qpK">
-                                                <rect key="frame" x="10" y="5" width="355" height="520"/>
+                                                <rect key="frame" x="10" y="5" width="355" height="607"/>
                                                 <subviews>
                                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98F-lw-Y5o">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="520"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="607"/>
                                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <wkWebViewConfiguration key="configuration">
                                                             <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -77,7 +77,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnC-JZ-7wk">
-                                        <rect key="frame" x="0.0" y="20" width="375" height="64"/>
+                                        <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwi-2L-2Rv">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
@@ -89,12 +89,21 @@
                                                             <constraint firstAttribute="height" constant="22" id="pdU-qD-5DU"/>
                                                         </constraints>
                                                     </view>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="viV-QU-U83">
+                                                        <rect key="frame" x="10" y="43" width="355" height="1"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="C03-eP-khi"/>
+                                                        </constraints>
+                                                    </progressView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="a3R-mf-mh5" firstAttribute="centerY" secondItem="Dwi-2L-2Rv" secondAttribute="centerY" id="2zA-Dj-Rgv"/>
                                                     <constraint firstItem="a3R-mf-mh5" firstAttribute="centerX" secondItem="Dwi-2L-2Rv" secondAttribute="centerX" id="Hg8-tD-Axt"/>
                                                     <constraint firstItem="a3R-mf-mh5" firstAttribute="width" secondItem="Dwi-2L-2Rv" secondAttribute="width" multiplier="355:375" id="JaY-WZ-Jry"/>
+                                                    <constraint firstItem="viV-QU-U83" firstAttribute="top" secondItem="a3R-mf-mh5" secondAttribute="bottom" id="KbU-7r-Fil"/>
+                                                    <constraint firstItem="viV-QU-U83" firstAttribute="width" secondItem="a3R-mf-mh5" secondAttribute="width" id="Vui-A2-jBu"/>
+                                                    <constraint firstItem="viV-QU-U83" firstAttribute="centerX" secondItem="Dwi-2L-2Rv" secondAttribute="centerX" id="qpd-qU-0rj"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -108,7 +117,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.80000000000000004" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="rnC-JZ-7wk" firstAttribute="leading" secondItem="hoC-A5-r0A" secondAttribute="leading" id="6YB-4C-8a3"/>
                                     <constraint firstItem="NKy-ak-Zqz" firstAttribute="top" secondItem="4Ke-hb-69K" secondAttribute="bottom" id="B62-xh-6fF"/>
@@ -124,7 +133,7 @@
                                 <viewLayoutGuide key="safeArea" id="hoC-A5-r0A"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.80000000000000004" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="V0y-7o-MsK" secondAttribute="bottom" id="Ugy-Gc-GP5"/>
                             <constraint firstItem="Z4q-WH-3dm" firstAttribute="trailing" secondItem="V0y-7o-MsK" secondAttribute="trailing" id="bc3-VJ-RZW"/>
