@@ -89,21 +89,12 @@
                                                             <constraint firstAttribute="height" constant="22" id="pdU-qD-5DU"/>
                                                         </constraints>
                                                     </view>
-                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="viV-QU-U83">
-                                                        <rect key="frame" x="10" y="43" width="355" height="1"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="1" id="C03-eP-khi"/>
-                                                        </constraints>
-                                                    </progressView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="a3R-mf-mh5" firstAttribute="centerY" secondItem="Dwi-2L-2Rv" secondAttribute="centerY" id="2zA-Dj-Rgv"/>
                                                     <constraint firstItem="a3R-mf-mh5" firstAttribute="centerX" secondItem="Dwi-2L-2Rv" secondAttribute="centerX" id="Hg8-tD-Axt"/>
                                                     <constraint firstItem="a3R-mf-mh5" firstAttribute="width" secondItem="Dwi-2L-2Rv" secondAttribute="width" multiplier="355:375" id="JaY-WZ-Jry"/>
-                                                    <constraint firstItem="viV-QU-U83" firstAttribute="top" secondItem="a3R-mf-mh5" secondAttribute="bottom" id="KbU-7r-Fil"/>
-                                                    <constraint firstItem="viV-QU-U83" firstAttribute="width" secondItem="a3R-mf-mh5" secondAttribute="width" id="Vui-A2-jBu"/>
-                                                    <constraint firstItem="viV-QU-U83" firstAttribute="centerX" secondItem="Dwi-2L-2Rv" secondAttribute="centerX" id="qpd-qU-0rj"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

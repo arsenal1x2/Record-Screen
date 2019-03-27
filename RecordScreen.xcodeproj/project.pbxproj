@@ -33,6 +33,7 @@
 		3650AB70223765F1001FA283 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650AB6F223765F1001FA283 /* UITableView+Extension.swift */; };
 		3650AB73223766E2001FA283 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650AB72223766E2001FA283 /* HomeTableViewCell.swift */; };
 		3650AB752237B2EE001FA283 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3650AB742237B2EE001FA283 /* NavigationViewController.swift */; };
+		36AD3B3022487B0800AB655D /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AD3B2F22487B0800AB655D /* ScreenRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		3650AB6F223765F1001FA283 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3650AB72223766E2001FA283 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		3650AB742237B2EE001FA283 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		36AD3B2F22487B0800AB655D /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		253D1D7821C7444D00C754D5 /* Ultinities */ = {
 			isa = PBXGroup;
 			children = (
+				362192762240D07700336445 /* Source */,
 				253D1D7A21C7456800C754D5 /* Extensions */,
 			);
 			path = Ultinities;
@@ -181,6 +184,14 @@
 				253D1D9121C751B400C754D5 /* BrowserViewController.swift */,
 			);
 			path = Browser;
+			sourceTree = "<group>";
+		};
+		362192762240D07700336445 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				36AD3B2F22487B0800AB655D /* ScreenRecorder.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		3650AB71223766BE001FA283 /* Cell */ = {
@@ -272,6 +283,7 @@
 				253D1D8021C7460900C754D5 /* UIView+Extension.swift in Sources */,
 				253D1D8A21C74A8B00C754D5 /* WebNavigationView.swift in Sources */,
 				253D1D5D21C73BFC00C754D5 /* AppDelegate.swift in Sources */,
+				36AD3B3022487B0800AB655D /* ScreenRecorder.swift in Sources */,
 				253D1D7721C73EB500C754D5 /* RecorderView.swift in Sources */,
 				362C29CB2238EE3D00DA4C5F /* SettingTableViewController.swift in Sources */,
 				253D1D7C21C7458400C754D5 /* UIViewController+Extension.swift in Sources */,

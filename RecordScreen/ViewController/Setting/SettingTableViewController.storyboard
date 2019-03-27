@@ -63,15 +63,17 @@
                                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izG-5g-Nau">
-                                                    <rect key="frame" x="310" y="12" width="49" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izG-5g-Nau">
+                                                    <rect key="frame" x="310" y="11" width="51" height="32"/>
                                                 </switch>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="sgk-2S-Ifj" firstAttribute="top" secondItem="SyU-pa-Muz" secondAttribute="topMargin" id="L90-vs-m3f"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="izG-5g-Nau" secondAttribute="trailing" id="XYw-6o-e89"/>
+                                                <constraint firstItem="izG-5g-Nau" firstAttribute="bottom" secondItem="SyU-pa-Muz" secondAttribute="bottomMargin" id="Xcw-Nj-QPu"/>
                                                 <constraint firstItem="sgk-2S-Ifj" firstAttribute="leading" secondItem="SyU-pa-Muz" secondAttribute="leadingMargin" id="pMr-bb-Pel"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="sgk-2S-Ifj" secondAttribute="bottom" id="puh-JJ-5qe"/>
+                                                <constraint firstItem="izG-5g-Nau" firstAttribute="top" secondItem="SyU-pa-Muz" secondAttribute="topMargin" id="zt4-Yr-NJD"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.2470588235" blue="0.0" alpha="0.74454195209999996" colorSpace="calibratedRGB"/>

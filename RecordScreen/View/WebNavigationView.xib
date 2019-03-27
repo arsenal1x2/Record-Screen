@@ -76,23 +76,39 @@
                                                         <action selector="clickReloadButton:" destination="-1" eventType="touchUpInside" id="9gI-iV-MVk"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-He-yiL">
-                                                    <rect key="frame" x="27" y="0.0" width="220" height="44"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="LVR-0w-ijf">
+                                                    <rect key="frame" x="22" y="0.0" width="230" height="44"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-He-yiL">
+                                                            <rect key="frame" x="0.0" y="0.0" width="230" height="40"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="urP-z9-6fv">
+                                                            <rect key="frame" x="0.0" y="43" width="230" height="1"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="b2w-Iw-eQx"/>
+                                                            </constraints>
+                                                        </progressView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="urP-z9-6fv" secondAttribute="bottom" id="6d9-r4-J2d"/>
+                                                        <constraint firstAttribute="trailing" secondItem="urP-z9-6fv" secondAttribute="trailing" id="fEj-Al-VTI"/>
+                                                        <constraint firstItem="urP-z9-6fv" firstAttribute="leading" secondItem="LVR-0w-ijf" secondAttribute="leading" id="seL-Wc-bFm"/>
+                                                    </constraints>
+                                                </stackView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="5eY-kh-OwH" firstAttribute="leading" secondItem="Zuj-He-yiL" secondAttribute="trailing" constant="5" id="1MW-sx-i1u"/>
+                                                <constraint firstItem="5eY-kh-OwH" firstAttribute="leading" secondItem="LVR-0w-ijf" secondAttribute="trailing" id="3jB-5B-jQ4"/>
+                                                <constraint firstAttribute="bottom" secondItem="LVR-0w-ijf" secondAttribute="bottom" id="TDo-A5-wqB"/>
                                                 <constraint firstItem="Rvm-q1-OqJ" firstAttribute="top" secondItem="svk-wF-6c3" secondAttribute="top" constant="5" id="XNi-18-m40"/>
                                                 <constraint firstItem="Rvm-q1-OqJ" firstAttribute="leading" secondItem="svk-wF-6c3" secondAttribute="leading" constant="5" id="YNz-Cm-eAJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="5eY-kh-OwH" secondAttribute="trailing" constant="5" id="bE8-An-w8Y"/>
-                                                <constraint firstItem="Zuj-He-yiL" firstAttribute="top" secondItem="svk-wF-6c3" secondAttribute="top" id="fAa-zG-Yku"/>
-                                                <constraint firstItem="Zuj-He-yiL" firstAttribute="leading" secondItem="Rvm-q1-OqJ" secondAttribute="trailing" constant="5" id="lGm-Rj-Jzp"/>
-                                                <constraint firstAttribute="bottom" secondItem="Zuj-He-yiL" secondAttribute="bottom" id="lPR-1x-Lr4"/>
+                                                <constraint firstItem="LVR-0w-ijf" firstAttribute="leading" secondItem="Rvm-q1-OqJ" secondAttribute="trailing" id="f0f-0l-lnD"/>
                                                 <constraint firstItem="5eY-kh-OwH" firstAttribute="top" secondItem="svk-wF-6c3" secondAttribute="top" constant="5" id="orL-je-XkG"/>
+                                                <constraint firstItem="LVR-0w-ijf" firstAttribute="top" secondItem="svk-wF-6c3" secondAttribute="top" id="rel-KM-yzl"/>
                                                 <constraint firstAttribute="bottom" secondItem="Rvm-q1-OqJ" secondAttribute="bottom" constant="5" id="rhQ-xI-YU2"/>
                                                 <constraint firstAttribute="bottom" secondItem="5eY-kh-OwH" secondAttribute="bottom" constant="5" id="yf3-bI-uOT"/>
                                             </constraints>

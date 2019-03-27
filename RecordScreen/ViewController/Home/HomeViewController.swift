@@ -17,11 +17,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMenuTableView()
+        initView()
     }
    
     func setupMenuTableView() {
         menuTableView.delegate = self
         menuTableView.dataSource = self
+    }
+    
+    func initView() {
+        //self.navigationController?.navigationBar.isHidden = true
     }
     
     func pushViewController(viewcontroller: UIViewController) {
