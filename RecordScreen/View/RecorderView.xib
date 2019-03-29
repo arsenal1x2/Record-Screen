@@ -38,7 +38,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="bDS-fr-2Tg" secondAttribute="height" multiplier="1:1" id="dpr-IX-YQK"/>
                             </constraints>
-                            <state key="normal" backgroundImage="icons8-record-filled"/>
+                            <state key="normal" image="icons8-record-filled" backgroundImage="icons8-record-filled"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBi-fP-jDM">
                             <rect key="frame" x="333" y="0.0" width="22" height="53"/>

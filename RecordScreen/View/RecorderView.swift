@@ -16,6 +16,9 @@ class RecorderView: UIView {
 
     @IBOutlet var contentView: UIView!
     weak var delegate: RecorderViewDelegate?
+    var isRecording: Bool {
+        return ScreenRecorder.shared.isRecording
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -19,6 +19,15 @@ class ScreenRecorder {
             RPScreenRecorder.shared().isMicrophoneEnabled = isMicrophoneEnabled
         }
     }
+    var isRecording: Bool {
+        return RPScreenRecorder.shared().isRecording
+    }
+    
+    func initFile(filename: String) {
+        let fileURL = URL(fileURLWithPath: ReplayFileUtil.filePath(filename))
+        assetWriter = try! AVAssetWriter(outputURL: fileURL, fileType:
+            AVFileType.mp4)
+    }
     
     func configVideoInput() {
         let videoOutputSettings: Dictionary<String, Any> = [
@@ -29,8 +38,8 @@ class ScreenRecorder {
         videoInput  = AVAssetWriterInput (mediaType: AVMediaType.video, outputSettings: videoOutputSettings)
         videoInput.expectsMediaDataInRealTime = true
         assetWriter.add(videoInput)
-        
     }
+    
     func configAudioMicrophoneInput() {
         let audioOutputSettings: Dictionary<String, Any> = [
             AVFormatIDKey : kAudioFormatMPEG4AAC,
@@ -58,10 +67,84 @@ class ScreenRecorder {
     
     
     func startRecordingWithMicrophone(withFileName filename: String, recordingHandler:@escaping (Error?)-> Void) {
-        
+        initFile(filename: filename)
+        configVideoInput()
+        configAudioAppInput()
+        configAudioMicrophoneInput()
+        RPScreenRecorder.shared().startCapture(handler: { (buffer, bufferType, error) in
+            recordingHandler(error)
+            if CMSampleBufferDataIsReady(buffer) {
+                if self.assetWriter.status == AVAssetWriterStatus.unknown {
+                    self.assetWriter.startWriting()
+                    self.assetWriter.startSession(atSourceTime: CMSampleBufferGetPresentationTimeStamp(buffer))
+                }
+                
+                if self.assetWriter.status == AVAssetWriterStatus.failed {
+                    print("Error occured, status = \(self.assetWriter.status.rawValue), \(self.assetWriter.error!.localizedDescription) \(String(describing: self.assetWriter.error))")
+                    return
+                }
+                
+                if bufferType == .video {
+                    if self.videoInput.isReadyForMoreMediaData {
+                        self.videoInput.append(buffer)
+                    }
+                }
+                if bufferType == .audioApp {
+                    if self.audioAppInput.isReadyForMoreMediaData {
+                        self.audioAppInput.append(buffer)
+                    }
+                }
+                if bufferType == .audioMic {
+                    if self.audioMicInput.isReadyForMoreMediaData {
+                        self.audioMicInput.append(buffer)
+                    }
+                }
+            }
+        }) { (error) in
+            recordingHandler(error)
+        }
     }
     
     func startRecordingNoMicrophone(withFileName filename: String, recordingHandler:@escaping (Error?)-> Void) {
-        
+        initFile(filename: filename)
+        configVideoInput()
+        configAudioAppInput()
+        RPScreenRecorder.shared().startCapture(handler: { (buffer, bufferType, error) in
+            recordingHandler(error)
+            if CMSampleBufferDataIsReady(buffer) {
+                if self.assetWriter.status == AVAssetWriterStatus.unknown {
+                    self.assetWriter.startWriting()
+                    self.assetWriter.startSession(atSourceTime: CMSampleBufferGetPresentationTimeStamp(buffer))
+                }
+                
+                if self.assetWriter.status == AVAssetWriterStatus.failed {
+                    print("Error occured, status = \(self.assetWriter.status.rawValue), \(self.assetWriter.error!.localizedDescription) \(String(describing: self.assetWriter.error))")
+                    return
+                }
+                
+                if bufferType == .video {
+                    if self.videoInput.isReadyForMoreMediaData {
+                        self.videoInput.append(buffer)
+                    }
+                }
+                
+                if bufferType == .audioApp {
+                    if self.audioAppInput.isReadyForMoreMediaData {
+                        self.audioAppInput.append(buffer)
+                    }
+                }
+            }
+        }) { (error) in
+            recordingHandler(error)
+        }
+    }
+    
+    func stopRecording(handler: @escaping (Error?) -> Void) {
+            RPScreenRecorder.shared().stopCapture {    (error) in
+                    handler(error)
+                    self.assetWriter.finishWriting {
+                        
+                    }
+            }
     }
 }
